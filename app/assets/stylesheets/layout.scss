@@ -1,0 +1,24 @@
+header.navbar {
+  height: 50px;
+  a {
+    display: inline-block;
+    line-height: 50px;
+  }
+  ul {
+    list-style-type: none;
+    li, a {
+      display: inline-block;
+    }
+    a {
+      color: #fff;
+      line-height: 50px;
+      height: 50px;
+      text-decoration: none;
+      padding: 0 15px;
+    }
+    a:hover {
+      color: #fff;
+      border-bottom: 3px solid #FFF;
+    }
+  }
+}

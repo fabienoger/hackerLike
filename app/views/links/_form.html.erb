@@ -10,14 +10,13 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :tittle %><br>
-    <%= f.text_field :tittle %>
+  <div class="field form-group has-primary">
+    <%= f.label :tittle, class: "control-label", for: "title" %>
+    <%= f.text_field :tittle, class: "form-control", id: "title" %>
   </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+  <div class="field form-group has-primary">
+    <%= f.label :url, class: "control-label", for: "url" %>
+    <%= f.text_field :url, class: "form-control", id: "url" %>
   </div>
   <div class="actions">
     <%= f.submit %>
