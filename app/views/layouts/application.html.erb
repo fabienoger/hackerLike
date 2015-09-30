@@ -12,6 +12,7 @@
       <a href="/" class="navbar-brand">HackerLike</a>
       <ul class="pull-right">
         <% if user_signed_in? %>
+          <li><a href="/">Home</a></li>
           <li><%= link_to 'Share link', new_link_path %></li>
           <li><%= link_to 'Edit', edit_user_registration_path %></li>
           <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>

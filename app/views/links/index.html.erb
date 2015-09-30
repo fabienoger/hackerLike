@@ -17,9 +17,21 @@
           <td><span><%= link.tittle %></span></td>
           <td><span><%= link.url %></span></td>
           <% if link.user == current_user %>
-            <td><%= link_to 'Show', link, class: "btn btn-flat btn-primary" %></td>
-            <td><%= link_to 'Edit', edit_link_path(link), class: "btn btn-flat btn-primary" %></td>
-            <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" %></td>
+            <td>
+              <%= link_to link, class: "btn btn-flat btn-primary" do %>
+                <i class="fa fa-eye"></i>&nbsp; Show
+              <% end %>
+            </td>
+            <td>
+              <%= link_to edit_link_path(link), class: "btn btn-flat btn-primary" do %>
+                <i class="fa fa-pencil"></i>&nbsp; Edit
+              <% end %>
+            </td>
+            <td>
+              <%= link_to link, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" do %>
+                <i class="fa fa-trash"></i>&nbsp; Destroy
+              <% end %>
+            </td>
           <% end %>
         </tr>
       <% end %>
