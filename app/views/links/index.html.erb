@@ -16,9 +16,11 @@
         <tr>
           <td><span><%= link.tittle %></span></td>
           <td><span><%= link.url %></span></td>
-          <td><%= link_to 'Show', link, class: "btn btn-flat btn-primary" %></td>
-          <td><%= link_to 'Edit', edit_link_path(link), class: "btn btn-flat btn-primary" %></td>
-          <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" %></td>
+          <% if link.user == current_user %>
+            <td><%= link_to 'Show', link, class: "btn btn-flat btn-primary" %></td>
+            <td><%= link_to 'Edit', edit_link_path(link), class: "btn btn-flat btn-primary" %></td>
+            <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-flat btn-danger" %></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
