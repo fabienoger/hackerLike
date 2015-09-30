@@ -23,8 +23,12 @@
     </div>
   </header>
   <main class="container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <p class="notice alert-success alert"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-primary"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </main>
 </body>
