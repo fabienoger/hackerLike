@@ -1,5 +1,4 @@
 <div class="row links">
-  <p id="notice"><%= notice %></p>
 
   <h1>Listing Links</h1>
 
@@ -27,5 +26,7 @@
 
   <br>
 
-  <%= link_to 'New Link', new_link_path, class: "btn btn-flat btn-success" %>
+  <%= link_to new_link_path, class: "btn btn-flat btn-success" do %>
+    <i class="fa fa-plus"></i>&nbsp; New Link
+  <% end %>
 </div>

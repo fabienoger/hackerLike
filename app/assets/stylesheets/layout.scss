@@ -1,5 +1,18 @@
+body {
+  background-image: url("footer_lodyas.png");
+}
+
+main.container {
+  background-color: #FFF;
+  padding: 20px 40px;
+}
+
 header.navbar {
   height: 50px;
+  a.navbar-brand {
+    height: 50px;
+    line-height: 25px;
+  }
   a {
     display: inline-block;
     line-height: 50px;

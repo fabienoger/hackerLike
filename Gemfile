@@ -47,3 +47,4 @@ end
 gem 'bootstrap-material-design'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
+gem 'font-awesome-sass'
